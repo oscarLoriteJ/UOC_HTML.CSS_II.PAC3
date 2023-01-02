@@ -2,7 +2,7 @@
   "name": "uoc-boilerplate",
   "version": "3.5.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students. Applied for PAC3",
   "scripts": {
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
@@ -26,7 +26,7 @@
     "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
   },
   "author": {
-    "name": "Jordi Tarrida",
+    "name": "Jordi Tarrida & Óscar Lorite",
     "email": "jorditarrida@uoc.edu"
   },
   "license": "MIT",
@@ -44,5 +44,8 @@
     "rimraf": "^3.0.2",
     "sharp": "^0.29.1",
     "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1"
   }
 }

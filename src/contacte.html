@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <meta
+            name="description"
+            content="Implementació del a tercera pràctica de l'assignatura HTML i CSS II "
+        />
+        <!-- do not remove this line! -->
+        <title>PAC3 - Llibreries d'utilitats</title>
+    </head>
+    <body class="bg-terciary">
+        <include src="./views/header.html"></include>
+        <h1 class="font-AbrilFatface text-5xl ml-10 mt-20 mb-10 text-left">
+            Contacte
+        </h1>
+
+        <div class="flex justify-center">
+            <!-- FORMULARI -->
+            <form
+                name="contacte"
+                method="POST"
+                data-netlify="true"
+                onsubmit="submit"
+                class="w-full max-w-6xl"
+            >
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label
+                            class="block text-gray-700 text-xs font-bold mb-2"
+                            for="nom"
+                        >
+                            Nom:
+                        </label>
+                        <input
+                            class="form-input"
+                            id="nom"
+                            name="nom"
+                            type="text"
+                            placeholder="Escrigui el nom"
+                            required
+                        />
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                        <label
+                            class="block text-gray-700 text-xs font-bold mb-2"
+                            for="cognoms"
+                        >
+                            Cognoms:
+                        </label>
+                        <input
+                            class="form-input"
+                            id="cognoms"
+                            name="cognoms"
+                            type="text"
+                            placeholder="Escrigui el cognom"
+                            required
+                        />
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                        <label
+                            class="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="email"
+                        >
+                            Correu electrònic
+                        </label>
+                        <input
+                            class="form-input"
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="Escrigui l'email"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-6 mt-8">
+                    <div class="w-full px-3">
+                        <label
+                            class="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="assumpte"
+                        >
+                            Assumpte
+                        </label>
+                        <input
+                            class="form-input"
+                            id="assumpte"
+                            name="assumpte"
+                            type="text"
+                            placeholder="Escrigui l'assumpte"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-6 mt-8">
+                    <div class="w-full px-3">
+                        <label
+                            class="block tracking-wide text-gray-700 text-xs font-bold mb-2"
+                            for="comentari"
+                        >
+                            Comentari:
+                        </label>
+                        <textarea
+                            class="form-input h-24"
+                            id="comentari"
+                            name="comentari"
+                            placeholder="Escrigui el comentari"
+                            required
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <button
+                                type="submit"
+                                class="btn-primary"
+                            >
+                                Enviar
+                            </button>
+                </div>
+            
+                </div>
+            </form>
+            <!-- FI FORMULARI-->
+        </div>
+
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
+</html>

@@ -21,6 +21,7 @@
  * see: https://v2.parceljs.org/features/module-resolution/
  * see commented examples below
  */
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
@@ -32,6 +33,23 @@
 
 @import "layouts/home";
 
+/**
+ * Font family
+ */
+@font-face {
+  font-family: "AbrilFatface";
+  src: url("../fonts/AbrilFatface-Regular.ttf");
+}
+
+@layer components {
+  .btn-primary {
+    @apply w-full  border border-secondary hover:bg-secondary hover:text-white p-3 rounded;
+  }
+
+  .form-input {
+    @apply appearance-none block w-full bg-white text-gray-700 border rounded py-4  px-4 mb-3 leading-tight focus:outline;
+  }
+}
 /**
  * Do NOT include anything else in this file!
  */
